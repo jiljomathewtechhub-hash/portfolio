@@ -1,25 +1,25 @@
-import React from 'react';
-import myPhoto from '../assets/jiljo.jpg';
+import myPhoto from "../assets/jiljo.jpg";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbar-container">
-        <div className="profile">
-          <img src={myPhoto} alt="Profile" className="profile-image" />
-          <h1>Jiljo Mathew</h1>
-          <p>Junior Front End Developer</p>
-        </div>
+    <header className="site-header">
+      <div className="nav-inner">
+        <a className="brand" href="#hero" aria-label="Go to home section">
+          <img src={myPhoto} alt="Jiljo Mathew" />
+          <div className="brand-copy">
+            <strong>Jiljo Mathew</strong>
+            <span>Frontend Developer</span>
+          </div>
+        </a>
 
-        <ul className="navbar-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
+        <nav className="nav-links" aria-label="Primary navigation">
+          <a href="#hero">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
