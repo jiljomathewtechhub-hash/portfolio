@@ -1,6 +1,6 @@
 :root {
-  --font-body: "Trebuchet MS", "Segoe UI", sans-serif;
-  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-display: "Arial Nova", "Aptos Display", "Segoe UI", sans-serif;
   --color-bg: #f4ede3;
   --color-surface: rgba(255, 255, 255, 0.74);
   --color-text: #2c2314;

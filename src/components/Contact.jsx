@@ -1,51 +1,60 @@
+import { profileLinks } from "../data/portfolioData";
+
 const Contact = () => {
   return (
     <section id="contact" className="section">
       <div className="section-heading">
         <span className="section-kicker">Contact</span>
-        <h2>Open to junior frontend roles, collaborative teams, and thoughtful digital work.</h2>
+        <h2>Let&apos;s build something useful.</h2>
         <p>
-          I&apos;m currently studying web development while building projects and
-          sharpening my frontend craft. If you&apos;re hiring or want to connect,
-          I&apos;d love to hear from you.
+          I&apos;m open to junior frontend roles, internships, and collaborative
+          product teams where I can keep growing as a React developer.
         </p>
       </div>
 
       <div className="contact-grid">
         <article className="contact-card">
-          <h3>Let&apos;s build something useful.</h3>
-          <p>
-            The roles I&apos;m most excited about combine clean frontend execution,
-            strong teamwork, and space to keep growing in UI engineering.
-          </p>
+          <div className="contact-intro">
+            <h3>Open to new opportunities</h3>
+            <p>
+              If you&apos;re hiring for a frontend role or building a product that
+              values clean React implementation and strong UI execution, I&apos;d
+              be glad to connect.
+            </p>
+          </div>
 
           <div className="contact-details">
-            <a href="mailto:jiljo555@gmail.com">jiljo555@gmail.com</a>
-            <a href="tel:+14167257991">+1 416-725-7991</a>
+            <strong>Jiljo Mathew</strong>
+            <span>Frontend Developer</span>
             <span>Toronto, ON</span>
+            <a href={profileLinks.email}>jiljomathew.techhub@gmail.com</a>
           </div>
 
           <div className="contact-actions">
-            <a href="mailto:jiljo555@gmail.com" className="button">
+            <a href={profileLinks.email} className="button">
               Email Me
             </a>
-            <a href="#hero" className="button-secondary">
-              Back to Top
+            <a
+              href={profileLinks.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-secondary"
+            >
+              View GitHub
             </a>
           </div>
         </article>
 
         <article className="contact-card contact-note">
-          <h3>Documents</h3>
+          <h3>What I bring</h3>
           <p>
-            I prepare resumes and cover letters for each opportunity, so I keep
-            the portfolio general and share tailored application documents
-            directly when needed.
+            Frontend engineering with React, JavaScript, reusable components,
+            responsive layouts, and careful attention to the user experience.
           </p>
           <ul>
-            <li>General portfolio and project samples are shown here</li>
-            <li>Role-specific resume versions are available on request</li>
-            <li>Tailored cover letters are shared privately per application</li>
+            <li>Reusable component systems and clean code structure</li>
+            <li>Responsive interfaces built for desktop, tablet, and mobile</li>
+            <li>Technical communication shaped by real user-facing experience</li>
           </ul>
         </article>
       </div>
